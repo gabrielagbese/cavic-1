@@ -1,0 +1,104 @@
+@import 'breakpoints';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.topnav {
+  background-color: #333eee;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  @include xs{
+      text-decoration-color: #fff;
+  }
+  @include md{
+    visibility: none;
+  }
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/*
+@include xs{
+    text-decoration-color: #fff;
+}
+@include md{
+    text-decoration-color: #fff;
+}
+*/
+.nav-main{
+    @include xs{
+        visibility: hidden;
+    }
+    @include md{
+        visibility: visible;
+    }
+}
+
+.menu-button{
+    color: #04AA6D;
+    @include xs{
+        background-color: red;
+    }
+    @include md{
+        background-color: blue;
+        visibility: hidden;
+    }
+}
+
+#dropdown{
+    display: none;
+    height: 100px;
+    width: 100px;
+    background-color: #333;
+}
