@@ -1,9 +1,15 @@
+import Image from 'next/image'
+
 export default function Navbar () {
 
     
 
     return (
         <div>
+            <div className="head-div">
+                {/* favicon image */}
+                <Image src="/logo.png" layout='fill' objectFit='contain'/>
+            </div>
             <div className="navbar">
                 <div className="topnav" id="myTopnav">
                     <div className="nav-main">

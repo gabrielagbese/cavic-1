@@ -25,6 +25,12 @@ a {
   }
 }
 
+.head-div {
+  height: 100px;
+  position: relative;
+  background-color: black;
+}
+
 .topnav {
   background-color: #333eee;
   overflow: hidden;
