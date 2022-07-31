@@ -14,9 +14,10 @@ export default function Navbar () {
                 <div className="topnav" id="myTopnav">
                     <div className="nav-main">
                         <a href="#home">Home</a>
-                        <a href="#news">News</a>
-                        <a href="#contact">Contact</a>
-                        <a>About</a>
+                        <a href="#news">About Us</a>
+                        <a href="#contact">Work Spaces</a>
+                        <a href='#events'>Events</a>
+                        <a href="#contact">Contact Us</a>
                     </div>
                     <div className="nav-mobile">
                         <a className="menu-button" href="#menu" onClick={() => toggleMenu()}>Menu</a>

@@ -28,14 +28,16 @@ a {
 }
 
 .head-div {
-    height: 100px;
+    padding: 5%;
+    height: 7vh;
     position: relative;
     background-color: black;
     //visibility: hidden;
 }
 
 .topnav {
-  background-color: #333eee;
+  border-top: thin solid white;
+  background-color: black;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -50,23 +52,23 @@ a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.3em;
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.nav-main a:hover {
+  //background-color: #ddd;
+  color: #FF5409;
 }
 
 /* Add an active class to highlight the current page */
-.topnav a.active {
+.nav-main a.active {
   background-color: #04AA6D;
   color: white;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
+/* Hide the link that should open and close the nav-main on small screens */
+.nav-main .icon {
   display: none;
 }
 
@@ -79,12 +81,15 @@ a {
 }
 */
 .nav-main{
+
     @include xs{
         visibility: hidden;
         height: 0;
     }
     @include md{
         visibility: visible;
+        padding: 2vh;
+        //font-weight: bold;
     }
 }
 
@@ -96,10 +101,9 @@ a {
 .menu-button{
     color: #04AA6D;
     @include xs{
-        background-color: red;
+        background-color: black;
     }
     @include md{
-        background-color: blue;
         visibility: hidden;
     }
 }
