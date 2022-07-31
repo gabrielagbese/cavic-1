@@ -3,21 +3,23 @@ export default function Navbar () {
     
 
     return (
-        <div className="navbar">
-            <div className="topnav" id="myTopnav">
-                <div className="nav-main">
-                    <a href="#home">Home</a>
-                    <a href="#news">News</a>
-                    <a href="#contact">Contact</a>
-                    <a>About</a>
-                </div>
-                <div className="nav-mobile">
-                    <a className="menu-button" href="#menu" onClick={() => toggleMenu()}>Menu</a>
-                    <div id="dropdown">
-                        <a href="#">Link 1</a>
+        <div>
+            <div className="navbar">
+                <div className="topnav" id="myTopnav">
+                    <div className="nav-main">
+                        <a href="#home">Home</a>
+                        <a href="#news">News</a>
+                        <a href="#contact">Contact</a>
+                        <a>About</a>
+                    </div>
+                    <div className="nav-mobile">
+                        <a className="menu-button" href="#menu" onClick={() => toggleMenu()}>Menu</a>
                     </div>
                 </div>
             </div>
+            <div id="dropdown">
+                        <a href="#">Link 1</a>
+                    </div>
         </div>
     );
 }
