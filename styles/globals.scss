@@ -31,13 +31,8 @@ a {
   background-color: #333eee;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
-  @include xs{
-      text-decoration-color: #fff;
-  }
-  @include md{
-    visibility: none;
-  }
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Style the links inside the navigation bar */
@@ -79,10 +74,16 @@ a {
 .nav-main{
     @include xs{
         visibility: hidden;
+        height: 0;
     }
     @include md{
         visibility: visible;
     }
+}
+
+.nav-mobile{
+    display: flex;
+    justify-content: center;
 }
 
 .menu-button{

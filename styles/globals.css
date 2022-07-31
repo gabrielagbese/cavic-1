@@ -31,22 +31,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media (min-width: 0px) {
-  .topnav {
-    -webkit-text-decoration-color: #fff;
-            text-decoration-color: #fff;
-  }
-}
-
-@media (min-width: 720px) {
-  .topnav {
-    visibility: none;
-  }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* Style the links inside the navigation bar */
@@ -88,6 +79,7 @@ a {
 @media (min-width: 0px) {
   .nav-main {
     visibility: hidden;
+    height: 0;
   }
 }
 
@@ -95,6 +87,15 @@ a {
   .nav-main {
     visibility: visible;
   }
+}
+
+.nav-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menu-button {
