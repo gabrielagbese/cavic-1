@@ -12,6 +12,7 @@ export default function Navbar () {
             </div>
             <div className="navbar">
                 <div className="topnav" id="myTopnav">
+                    
                     <div className="nav-main">
                         <a href="#home">Home</a>
                         <a href="#news">About Us</a>
@@ -22,6 +23,7 @@ export default function Navbar () {
                     <div className="nav-mobile">
                         <a className="menu-button" href="#menu" onClick={() => toggleMenu()}>Menu</a>
                     </div>
+                    
                 </div>
             </div>
             <div id="dropdown">
